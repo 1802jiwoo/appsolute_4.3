@@ -26,14 +26,14 @@ class FirstScreen extends StatelessWidget {
                 },
                 child: const Text('버튼'),
               ),
-              ElevatedButton.icon(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => const SecondScreen()),
-                  );
-                },
+                ElevatedButton.icon(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const SecondScreen()),
+                    );
+                  },
                 icon: const Icon(Icons.ac_unit),
                 label: const Text('버튼'),
               ),
@@ -48,7 +48,7 @@ class FirstScreen extends StatelessWidget {
                 child: const Text(
                   '텍스트 버튼',
                   style: TextStyle(
-                    color: Colors.blue,
+                    color: Colors.green,
                   ),
                 ),
               ),

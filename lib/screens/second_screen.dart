@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:qwer/screens/dja.dart';
 
 class SecondScreen extends StatelessWidget {
   const SecondScreen({super.key});
@@ -18,11 +19,26 @@ class SecondScreen extends StatelessWidget {
           title: const Text('두번째 화면'),
         ),
         body: Center(
-          child: ElevatedButton(
-            onPressed: () {
-              Navigator.pop(context);
-            },
-            child: const Text('뒤로가기'),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.pop(context);
+                },
+                child: const Text('뒤로가기'),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const Dja()),
+                  );
+                },
+                child: const Text('버튼'),
+              ),
+            ],
           ),
         ),
       ),
